@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Josefin+Sans&family=Oswald:wght@400;600&family=Poppins:ital,wght@0,200;1,500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="img/depositphotos_256601568-stock-illustration-floral-alphabet-letter-b-with.jpg" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+        <nav id="nav" class="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="fa fa-times"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#SobreMi">Sobre Mi</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+  
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" />
+            </div>
+  
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="abcde@gmail.com"
+                required
+              />
+            </div>
+  
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+  
+            <div class="form-row">
+              <button>Enviar</button>
+            </div>
+            <p class="alertas" id="alertas"></p>
+        </form>
+    </div>
+
+    <footer>
+
+        <ul class="footer">
+            <li><a href="http://instagram.com/brendastorress" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://github.com/Soledad1988" target="_blank"><i class="fa fa-github"></i></a></li>
+            <li><a href="http://linkedin.com/in/torres-brenda-soledad" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+
+        <div class="copyrite">
+            <i class="fa fa-copyright"></i>
+            <h4>Torres Brenda - 2023</h4>
+        </div>
+
+    </footer>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

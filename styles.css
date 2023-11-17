@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(84, 84, 84);
+}
+
+.logo{
+    max-width: 5rem;
+    border-radius: 50px;
+}
+
+button i{
+    color: rgb(227, 171, 180);
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: rgb(227, 171, 180);
+    font-size: 1.5rem;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+/*-------------FIN NAV--------------------------*/
+
+/*-------------INICIO MAIN----------------------*/
+
+.section-1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 2em;
+}
+
+.acerca-de{
+    text-align: center;
+    font-family:Helvetica;
+}
+
+.acerca-imagen img{
+    border-radius: 6px;
+}
+
+.section-2 img{
+    max-width: 100%;
+}
+
+.titulo{
+    border: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(84, 84, 84);
+}
+
+.subtitulo{
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5rem;
+    color: rgb(84, 84, 84);
+}
+
+.trabajos{
+    display: flex;
+}
+
+.card{
+    flex: 50%; /*tamaño de la tarjeta*/
+    /*border: 1px solid black;*/
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card-img{
+    width: 400px;
+    height: 250px;
+   /* border: 1px solid black;*/
+    border-radius: 10px;
+}
+
+.imag{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.card .card-cuerpo{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.card-cuerpo{
+    margin: 2rem;
+}
+
+.parrafo-trabajo{
+    padding: 10px;
+    text-align: justify;
+}
+
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-footer i{
+    color: rgb(222, 155, 166);
+    font-size: 30px;
+}
+
+/*skills*/
+.skills{
+    padding: 3rem;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    list-style: none;
+}
+
+
+/*------------FIN MEIN--------------------------*/
+
+/*formulario*/
+/* ------------- CSS General ------------- */
+
+  
+  /*body {
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+  }*/
+  
+  /* ------------- Encabezado Contacto ------------- */
+  
+ /* footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }*/
+  
+  .form-header {
+    text-align: center;
+    background-color: rgb(84, 84, 84);
+    border: 1px solid rgb(227, 171, 180);
+    border-radius: 3px;
+  
+    width: 50%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  
+  .form-row input[type="text"],
+  .form-row input[type="email"]  {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 80%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+/*fin de formulario*/
+
+footer{
+    background-color: rgb(84, 84, 84);
+    border-radius: 0 0 10px 10px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: rgb(227, 171, 180);
+    font-size: 1em;
+    padding: 10px;
+    list-style: none;
+}
+
+ul li a{
+    font-size: 30px;
+    color: rgb(227, 171, 180);
+    
+}
+
+footer img{
+    width: 70px;
+    border-radius: 50px;   
+}
+
+.copyrite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    gap: 1em;
+    color: rgb(227, 171, 180);
+    padding: 10px;
+}
+
+
+@media (max-width:550px){
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu{
+        color:#ececec;
+    }
+
+    .nav{
+        /*display: none;*/
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1 rem;
+
+
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+         /*opacidad para el fondo*/
+         box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a{
+        text-decoration: none;
+    }
+
+    /*MAIN*/
+
+    .section-1{
+        display: block;
+        justify-content: center;
+        align-items:center;
+        padding: 2em;
+    }
+    
+    .acerca-de{
+        text-align: center;
+    }
+
+    .acerca-imagen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+    }
+
+    /*trabajos*/
+    .trabajos{
+        display: block;
+    }
+
+    .imag {
+        margin: 1rem;
+    }
+    
+    /*skills*/
+.skills{
+    display: block;
+    
+}
+
+.skills li{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.skills li img{
+    width: 85px;
+}
+
+   
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"],
+    .form-row input[type="email"]  {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+
+    .form-row textarea {
+        width: 250px;
+      }
+
+    .form-row button {
+      margin-left: 120px;}
+      
+  }
