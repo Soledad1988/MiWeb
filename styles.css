@@ -54,7 +54,8 @@ button i{
 }
 
 .acerca-imagen img{
-    border-radius: 6px;
+    width: 200px;
+    border-radius: 20px;
 }
 
 .section-2 img{
