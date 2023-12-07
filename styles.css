@@ -274,7 +274,7 @@ button i{
   
   
 .form-row button:active {
-    background-color: #407fc7;
+    background-color: rgb(227, 171, 180);
 }
 /*fin de formulario*/
 
