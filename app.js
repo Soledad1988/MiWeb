@@ -40,3 +40,29 @@ form.addEventListener("submit", (e) => {
     e.preventDefault(); // Evita que el formulario se envíe automáticamente
   }
 });
+
+//https://formspree.io/f/mqkvrqjj
+//enviar formulario
+const $form = document.querySelector('form')
+
+async function handleSubmit(event){
+  event.preventDefault()
+  const form = new FormData(this)
+  const response = await fetch('https://formspree.io/f/mqkvrqjj',{
+    method:'POST',
+    body:form,
+    headers:{
+      Accept:'application7json'
+    }
+  })
+
+  if(response.ok){
+    this.reset()
+    alert('Mensaje enviado')
+  }else{
+    alert('Error en el envio')
+  }
+
+}
+
+form.addEventListener('submit', handleSubmit)
