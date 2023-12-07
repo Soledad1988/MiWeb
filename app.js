@@ -26,9 +26,7 @@ function validarFormulario() {
 
   if (!valido) {
     parrafo.innerHTML = warnings;
-  } else {
-    parrafo.innerHTML = "Enviado";
-  }
+  } 
   return valido;
 }
 
@@ -45,7 +43,7 @@ async function handleSubmit(event){
     method:'POST',
     body:form,
     headers:{
-      Accept:'application7json'
+      Accept:'application/json'
     }
   })
 
