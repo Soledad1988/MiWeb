@@ -62,6 +62,22 @@ button i{
     max-width: 100%;
 }
 
+/*index sobre mi*/
+.sobreMi-p1{
+    text-align: center;
+    padding: 2em;
+    font-size: 1.5rem;
+}
+
+
+.sobreMi-p3{
+    border: #1c1c1c solid 1px;
+    border: 10px;
+    text-align:justify;
+    padding: 2em;
+    font-size: 1.2rem;
+}
+
 .titulo{
     border: 20px;
     padding: 15px;
