@@ -32,14 +32,7 @@ function validarFormulario() {
   return valido;
 }
 
-form.addEventListener("submit", (e) => {
-  if (validarFormulario()) {
-    // Si la validación es exitosa, puedes enviar el formulario
-    formulario.submit();
-  } else {
-    e.preventDefault(); // Evita que el formulario se envíe automáticamente
-  }
-});
+
 
 //https://formspree.io/f/mqkvrqjj
 //enviar formulario
@@ -65,4 +58,13 @@ async function handleSubmit(event){
 
 }
 
-form.addEventListener('submit', handleSubmit)
+form.addEventListener("submit", handleSubmit, (e) => {
+  if (validarFormulario()) {
+    // Si la validación es exitosa, puedes enviar el formulario
+    formulario.submit();
+  } else {
+    e.preventDefault(); // Evita que el formulario se envíe automáticamente
+  }
+});
+
+//form.addEventListener('submit', handleSubmit)
