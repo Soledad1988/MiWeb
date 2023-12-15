@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>MyWeb</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,29 +13,31 @@
 </head>
 <body>
     
-    <header>
-        <img class="logo" src="img/depositphotos_256601568-stock-illustration-floral-alphabet-letter-b-with.jpg" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
-        <nav id="nav" class="nav">
-            <button id="cerrar" class="cerrar-menu"><i class="fa fa-times"></i></button>
-            <ul class="nav-list">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobreMi.html">Sobre Mi</a></li>
-                <li><a href="#Proyectos">Proyectos</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="BrendaTorres - CV.pdf" download="Brenda Torres - CV">CV<i class="fa fa-file-pdf-o"></i></a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main id="seccion-principal">
+    <div class="container">
+
+        <img src="img/fondos-para-páginas-web-6.jpg" alt="Imagen de Fondo">
+
+        <header>
+            <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+            <nav id="nav" class="nav">
+                <button id="cerrar" class="cerrar-menu"><i class="fa fa-times"></i></button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="BrendaTorres - CV.pdf" download="Brenda Torres - CV">CV<i class="fa fa-file-pdf-o"></i></a></li>
+                </ul>
+            </nav>
+        </header>
 
         <section class="section-1" >
 
-            <div class="acerca-de">
-                <h2 class="titulo" id="SobreMi">Bienvenidos a mi pagina web!!</h2>
+            <div class="acerca-imagen">
+                <img src="img/foto.jpg" alt="imagen-personal">
+            </div>
 
+            <div class="acerca-de">
                 <p class="parrafo-2">Soy Brenda, Contadora publica y deasolladora BackEnd Java, comence en el mundo
                     de la programaciòn como un juego que fue creciendo de a poco, al punto de querer
                     dedicarme de lleno a este mundo atrapante, me gusta mucho la logica y las matemàticas.
@@ -44,167 +46,26 @@
                 </p>
             </div>
 
-            <div class="acerca-imagen">
-                <img src="img/foto.jpg" alt="imagen-personal">
-            </div>
-
         </section>
 
-        <section class="section-2">
-            <img src="img/web-design.jpg" alt="portada">
-        </section>
+        <footer>
 
-        <section class="section-3">
-            <h2 class="titulo" id="Proyectos">Mis proyectos</h2>
-
-            <div class="trabajos">
-
-                <div class="card">
-                    <h3 class="subtitulo">Hotel Alura</h3>
-
-                    <div class="card-img">
-                       <img src="img/HotelAlura.webp" class="imag" alt="">
-                    </div>
-
-                    <div class="card-cuerpo"> 
-                        <p class="parrafo-trabajo"> Sistema de reserva, contiene:
-                            autenticación de usuario, permitir crear, editar y eliminar una reserva 
-                            para los clientes;Buscar en la base de datos todas las informaciones 
-                            tanto de los clientes como de las reservas;
-                            Registrar, editar y eliminar datos de los huéspedes;
-                        </p>
-                    </div>
-
-                    <div class="card-footer">
-                        <a href="https://github.com/Soledad1988/Hotel-BackEnd.git" target="_blank"><i class="fa fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="subtitulo">Conversor de Monedas</h3>
-
-                    <div class="card-img">
-                        <img src="img/ConversorDivisas.webp" class="imag" alt="">
-                    </div>
-
-                    <div class="card-cuerpo">
-                        
-                        <p class="parrafo-trabajo">Crear un conversor de divisas utilizando el lenguaje Java. 
-                            Las características solicitadas por nuestro cliente son las siguientes:
-                            Requisitos:
-                            El convertidor de moneda debe:
-                            Convertir de la moneda de tu país a Dólar
-                            Recordando que también debe ser posible convertir inversamente, es decir:
-                            Convertir de Dólar a la moneda de tu país.
-                        </p>
-                    </div>
-
-                    <div class="card-footer">
-                        <a href="https://github.com/Soledad1988/challenge-Java-Alura" target="_blank"><i class="fa fa-github"></i></a>
-                    </div>
-
-                </div>
-
-                <div class="card">
-                    <h3 class="subtitulo">Sistema de Clientes</h3>
-                    
-                    <div class="card-img">
-                        <img src="img/Profile.webp" class="imag" alt="">
-                    </div>
-
-                    <div class="card-cuerpo">
-                        
-                        <p class="parrafo-trabajo">Crud Profile. Desarrollo de un curriculum en el cual
-                            se generan altas, modificaciones y bajas de empleos, educacion entre otros.
-                        </p>
-                    </div>
-
-                    <div class="card-footer">
-                        <a href="https://github.com/Soledad1988/FrontEnd---MyProfile" target="_blank"><i class="fa fa-github"></i></a>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="section-3">
-        
-            <div class="trabajos">
-                <div class="card">
-                    <h3 class="subtitulo">CRUD Gym</h3>
-
-                    <div class="video">
-                        <iframe width="100%" height="315" src="video/GymFitness.mp4" title="Gym" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-
-                    <div class="card-cuerpo"> 
-                        <p class="parrafo-trabajo"> Sistema de reserva, contiene:
-                            autenticación de usuario, permitir crear, editar y eliminar una reserva 
-                            para los clientes;Buscar en la base de datos todas las informaciones 
-                            tanto de los clientes como de las reservas;
-                            Registrar, editar y eliminar datos de los huéspedes;
-                        </p>
-                    </div>
-
-                    <div class="card-footer">
-                        <a href="https://github.com/Soledad1988/AppGym-JDBC-MySQL-Java" target="_blank"><i class="fa fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3 class="subtitulo">Liquidaciones</h3>
-
-                    <div class="video">
-                        <iframe width="100%" height="315" src="video/GymFitness.mp4" title="Gym" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-
-                    <div class="card-cuerpo"> 
-                        <p class="parrafo-trabajo"> Sistema de reserva, contiene:
-                            autenticación de usuario, permitir crear, editar y eliminar una reserva 
-                            para los clientes;Buscar en la base de datos todas las informaciones 
-                            tanto de los clientes como de las reservas;
-                            Registrar, editar y eliminar datos de los huéspedes;
-                        </p>
-                    </div>
-
-                    <div class="card-footer">
-                        <a href="https://github.com/Soledad1988/sueldosBackEnd" target="_blank"><i class="fa fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-        <section class="section-4">
-            <h2 class="titulo" id="Skills">Skills</h2>
-            <ul class="skills">
-                <li><img src="img/icons8-java-48.png" alt=""></li>
-                <li><img src="img/icons8-spring-boot-48.png" alt=""></li>
-                <li><img src="img/icons8-mysql-48.png" alt=""></li>
-                <li><img src="img/icons8-html-48.png" alt=""></li>
-                <li><img src="img/icons8-css-48.png" alt=""></li>
+            <ul class="footer">
+                <li><a href="http://instagram.com/brendastorress" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Soledad1988" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="http://linkedin.com/in/torres-brenda-soledad" target="_blank"><i class="fa fa-linkedin"></i></a></li>
             </ul>
-        </section>
+    
+            <div class="copyrite">
+                <i class="fa fa-copyright"></i>
+                <h4>Torres Brenda - 2023</h4>
+            </div>
+    
+        </footer>
 
-    </main>
-
-    <footer>
-
-        <ul class="footer">
-            <li><a href="http://instagram.com/brendastorress" target="_blank"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://github.com/Soledad1988" target="_blank"><i class="fa fa-github"></i></a></li>
-            <li><a href="http://linkedin.com/in/torres-brenda-soledad" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-
-        <div class="copyrite">
-            <i class="fa fa-copyright"></i>
-            <h4>Torres Brenda - 2023</h4>
-        </div>
-
-    </footer>
+    </div>
 
     <script src="app.js"></script>
 </body>
+</html>
 </html>
