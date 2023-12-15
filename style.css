@@ -1,0 +1,304 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    /*height: 100vh;  100% de la altura de la ventana de visualización */
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para asegurar que la imagen cubra completamente el contenedor */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.027);
+    /*background-color: rgba(255, 255, 255, 0.164);  Fondo semi-transparente para mejorar la visibilidad */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1; /* Asegura que el nav esté en la parte superior */
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+/*-------------FIN NAV--------------------------*/
+
+/*-------------INICIO MAIN----------------------*/
+
+.section-1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    background-color: rgba(161, 159, 159, 0.221); /* Ajusta el color de fondo según tus necesidades */
+    border-radius: 10px; /* Ajusta el radio del borde según tus necesidades */
+    color: white;
+}
+
+.acerca-de {
+    text-align: center;
+    font-family: Helvetica;
+}
+
+.acerca-imagen img {
+    width: 150px;
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    border-radius: 100px;
+}
+
+/*-------------trabajps-------------------------*/
+.trabajos {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: 5px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    width: 350px; /* Ajusta según sea necesario */
+    height: 400px;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(161, 159, 159, 0.498); 
+    display: flex;
+    flex-direction: column;
+}
+
+.header-car{
+    display: flex;
+    justify-content:space-between;
+}
+.card-img{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    height: 150px; /* Ajusta según sea necesario */
+}
+
+.imag{
+    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de la tarjeta */
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+
+h3, p{
+    color: white;
+    text-align: center;
+}
+
+.parrafo-trabajo{
+    padding: 10px;
+    text-align: justify;
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icono i{
+    color: white;
+    font-size: 30px;
+}
+
+/*---------------fin trabajos-----------------------*/
+
+/*skills*/
+.section-4{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 3rem;
+    width: 100%;
+    list-style: none;
+    background-color: rgba(161, 159, 159, 0.671);
+}
+
+/*---------------contacto-----------------------*/
+.contenedor-formulario {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-bottom: 20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5em;
+    background-color: rgba(161, 159, 159, 0.338); /* Ajusta el color de fondo según tus necesidades */
+    border-radius: 10px; /* Ajusta el radio del borde según tus necesidades */
+    color: white;
+    
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    color: white;
+  }
+
+  .form-header p{
+    color:white;
+  }
+
+/*Inicio formulario*/
+.formulario {
+    background-color: rgba(161, 159, 159, 0.689); /* Ajusta el color de fondo según tus necesidades */
+    border: 1px solid #d6d9dc;
+    border-radius: 10px;
+    width: 80%;
+    padding: 30px;
+  
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"]  {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+    width: 100%;
+}
+
+.form-row button {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgb(84, 84, 84);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.form-row button:hover {
+    background-color:black;
+}
+  
+.form-row button:active {
+    background-color: rgb(227, 171, 180);
+}
+
+/*fin de formulario*/
+
+
+/*-------------footer--------------------------*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color:rgba(255, 255, 255, 0.027);
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    font-size: 1em;
+    padding: 5px;
+    list-style: none;
+}
+
+ul li a{
+    font-size: 30px;
+    color: white;
+}
+
+.copyrite{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    gap: 1em;
+    color: white;
+    padding: 5px;
+}
