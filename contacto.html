@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,83 @@
     <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
 
 </head>
+
+<body>
+    
+
+  <div class="container">
+
+      <img src="img/fondos-para-páginas-web-6.jpg" alt="">
+
+      <header>
+          <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+          <nav id="nav" class="nav">
+              <button id="cerrar" class="cerrar-menu"><i class="fa fa-times"></i></button>
+              <ul class="nav-list">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="BrendaTorres - CV.pdf" download="Brenda Torres - CV">CV<i class="fa fa-file-pdf-o"></i></a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <section class="contenedor-formulario" >
+        <h1>Contacto</h1>
+        <p><em>¡Espero tu consulta y/o comentario!</em></p>
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" class="form-control"/>
+            </div>
+  
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="abcde@gmail.com"
+                required
+              />
+            </div>
+  
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+  
+            <div class="form-row">
+              <button type="submit">Enviar</button>
+            </div>
+            <p class="alertas" id="alertas"></p>
+        </form>
+
+      </section>
+
+      <footer>
+
+          <ul class="footer">
+              <li><a href="http://instagram.com/brendastorress" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://github.com/Soledad1988" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a href="http://linkedin.com/in/torres-brenda-soledad" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+  
+          <div class="copyrite">
+              <i class="fa fa-copyright"></i>
+              <h4>Torres Brenda - 2023</h4>
+          </div>
+  
+      </footer>
+
+  </div>
+
+ 
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+<!--
 <body>
 
     <header>
@@ -77,4 +154,4 @@
 
     <script src="app.js"></script>
 </body>
-</html>
+</html>-->
