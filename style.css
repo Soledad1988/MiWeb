@@ -26,7 +26,6 @@ header {
     justify-content:flex-end;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.027);
-    /*background-color: rgba(255, 255, 255, 0.164);  Fondo semi-transparente para mejorar la visibilidad */
     padding: 10px;
     box-sizing: border-box;
     z-index: 1; /* Asegura que el nav esté en la parte superior */
@@ -63,19 +62,20 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 2em;
-    background-color: rgba(161, 159, 159, 0.221); /* Ajusta el color de fondo según tus necesidades */
-    border-radius: 10px; /* Ajusta el radio del borde según tus necesidades */
+    background-color: rgba(121, 120, 120, 0.409);
+    border-radius: 10px;
     color: white;
 }
 
-.acerca-de {
-    text-align: center;
+.acerca-de .parrafo{
+    text-align: justify;
     font-family: Helvetica;
+    font-size: 20px;
 }
 
 .acerca-imagen img {
-    width: 150px;
-    height: 150px; /* Ajusta la altura según tus necesidades */
+    width: 200px;
+    height: 200px;
     border-radius: 100px;
 }
 
@@ -85,7 +85,6 @@ header {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /*border: 5px solid red;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,10 +92,11 @@ header {
 
 
 .card{
-    width: 350px; /* Ajusta según sea necesario */
+    width: 350px;
     height: 400px;
     margin: 5px;
     padding: 10px;
+    border-radius: 10px;
     background-color: rgba(161, 159, 159, 0.498); 
     display: flex;
     flex-direction: column;
@@ -112,11 +112,11 @@ header {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    height: 150px; /* Ajusta según sea necesario */
+    height: 150px;
 }
 
 .imag{
-    max-width: 100%; /* Asegura que la imagen no sobrepase el ancho de la tarjeta */
+    max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
 }
@@ -164,6 +164,7 @@ h3, p{
     padding: 3rem;
     width: 100%;
     list-style: none;
+    border-radius: 10px;
     background-color: rgba(161, 159, 159, 0.671);
 }
 
@@ -179,8 +180,8 @@ h3, p{
     align-items: center;
     flex-direction: column;
     padding: 2.5em;
-    background-color: rgba(161, 159, 159, 0.338); /* Ajusta el color de fondo según tus necesidades */
-    border-radius: 10px; /* Ajusta el radio del borde según tus necesidades */
+    background-color: rgba(133, 131, 131, 0.388);
+    border-radius: 10px;
     color: white;
     
 }
@@ -200,7 +201,7 @@ h3, p{
 
 /*Inicio formulario*/
 .formulario {
-    background-color: rgba(161, 159, 159, 0.689); /* Ajusta el color de fondo según tus necesidades */
+    background-color: rgba(161, 159, 159, 0.689);
     border: 1px solid #d6d9dc;
     border-radius: 10px;
     width: 80%;
