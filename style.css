@@ -305,11 +305,10 @@ ul li a{
     padding: 5px;
 }
 
-/* Estilos para pantallas más pequeñas (hasta 768px) */
-@media (max-width: 768px) {
+/* Estilos para pantallas más pequeñas (hasta 467px) */
+@media (max-width: 467px) {
     
     .container {
-        width: 100%;
         height: 100vh;  /*100% de la altura de la ventana de visualización */
     }
 
@@ -357,48 +356,49 @@ ul li a{
     .nav-list li a {
         color: white;
     }
-    
-   /*seccion principal*/
 
-   .section-1 {
-    top: 40%; /* Ajusta la posición según sea necesario */
+
+    .section-1 {
+        top: 40%;
     }
-
+    
     .acerca-de .parrafo {
-        font-size: 12px; /* Reduzca el tamaño del texto u haga otros ajustes según sea necesario */
-    }
-
-    .acerca-imagen img {
-        width: 100px; /* Ajuste el tamaño de la imagen según sea necesario */
-        height: 100px;
-        border-radius: 60px;
-    }
-
-    /*Trabajo*/
-    .trabajos {
-        top: 35%;
-        left: 75%;
-        transform: translate(-50%, -10%);
-        display: block;
-        justify-content: center;
-        align-items: center;
+         font-size: 10px;
     }
     
+    .acerca-imagen img {
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+    }
+
+    /*---------------Trabajo--------------------*/
+    .trabajos {
+        top: 45%;
+        left: 55%;
+        display: block;
+    }
     
     .card{
-        width: 250px;
-        height: 300px;
-        display: block;
+        height: auto;
     }
 
-
     .card-img{
-        border-radius: 10px;
-        display: block;
-        justify-content: center;
-        align-items: center;
         padding: 0.2em;
-        height: 150px;
+        height: auto;
+    }
+
+    .card-cuerpo{
+        display: none;
+    }
+    
+    .icono i{
+        font-size: 15px;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 115px;
     }
 
     h3, p{
@@ -406,11 +406,13 @@ ul li a{
     }
     
     .icono i{
-        font-size: 15px;
+        font-size: 10px;
     }
 
-    /*skills*/
-    .section-4{
+    /*-----------skills----------------------------*/
+    .section-4 {
+        top: 60%;
+        transform: translate(-50%, -60%);
         display: block;
         height: auto;
         align-items: center;
@@ -418,16 +420,11 @@ ul li a{
 
     .skills{
         display: block;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem;
-        width: 10%;
-        list-style: none;
-        border-radius: 10px;
+        width: 8%;
         background-color: rgba(20, 20, 20, 0.308);
     }
 
-    /*contacto*/
+    /*------------contacto----------------------*/
     .contenedor-formulario {
         top: 60%;
         left: 50%;
@@ -435,7 +432,6 @@ ul li a{
         margin-bottom: 1px;
         padding: 1em;
         border-radius: 10px;
-        
     }
 
     h1, label{
@@ -445,8 +441,7 @@ ul li a{
     .formulario {
         width: 80%;
         height: 30%;
-        padding: 22px;
-      
+        padding: 22px;      
     }
     
     .form-row input[type="text"],
@@ -454,7 +449,6 @@ ul li a{
         font-size: 12px;
     }
 
-    
     .form-row textarea {
         font-size: 12px;
     }
@@ -462,108 +456,19 @@ ul li a{
     .form-row button {
         font-size: 12px;
     }
-    
+  
 
     /*-------------footer--------------------------*/
 
     footer {
-        width: 100%;
-        height: 20%;
+        height: 17%;
+        font-size: 0.5em;
+        padding: 1px;
         background-color:rgba(255, 255, 255, 0.167);
     }
 
-    .footer{
-        gap: 1em;
-        font-size: 0.5em;
-        padding: 1px;
-
-    }
-
-    ul li a{
-        font-size: 15px;
-    }
-
-    i, h4{
-        font-size: 8px;
-    }
-
-}
-
-/* Estilos para pantallas más pequeñas (hasta 467px) */
-@media (max-width: 467px) {
-    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
-    pequeñas */
-    .container {
-        height: 100vh;  /*100% de la altura de la ventana de visualización */
-    }
-
-    .section-1 {
-        top: 40%; /* Ajusta la posición según sea necesario */
-    }
-    
-    .acerca-de .parrafo {
-         font-size: 8px; /* Reduzca el tamaño del texto u haga otros ajustes según sea necesario */
-    }
-    
-    .acerca-imagen img {
-        width: 65px; /* Ajuste el tamaño de la imagen según sea necesario */
-        height: 65px;
-        border-radius: 50px;
-    }
-
-    /*Trabajo*/
-    .card{
-        position: ab;
-        width: 200px;
-        height: auto;
-    }
-    
-    .card-img{
-        height: 90px;
-        padding: 0.1em;
-    }
-
-    h3, p{
-        font-size: 8px;
-    }
-    
-    .icono i{
-        font-size: 10px;
-    }
-
-    /*skills*/
-
-    .skills{
-        width: 7%;
-    }
-
-    /*-------------footer--------------------------
-
-    footer {
-     height: 15%;
-    }
-
-    .footer{
-        gap: 1em;
-        font-size: 0.5em;
-        padding: 1px;
-
-    }
-
-    ul li a{
-        font-size: 10px;
-    }
-
-    i, h4{
-        font-size: 6px;
-    }*/
-
-    footer {
-        height: 17%;
-    }
-
     ul li a {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
    
 }
