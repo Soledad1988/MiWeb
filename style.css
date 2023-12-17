@@ -305,10 +305,14 @@ ul li a{
     padding: 5px;
 }
 
-
 /* Estilos para pantallas más pequeñas (hasta 768px) */
 @media (max-width: 768px) {
     
+    .container {
+        width: 100%;
+        height: 100vh;  /*100% de la altura de la ventana de visualización */
+    }
+
     .abrir-menu, 
     .cerrar-menu {
         display: block;
@@ -408,6 +412,7 @@ ul li a{
     /*skills*/
     .section-4{
         display: block;
+        height: auto;
         align-items: center;
     }
 
@@ -433,12 +438,13 @@ ul li a{
         
     }
 
-    .form-header h1 {
-        font-size: 10px;
+    h1, label{
+        font-size: 12px;
     }
 
     .formulario {
-        width: 60%;
+        width: 80%;
+        height: 30%;
         padding: 22px;
       
     }
@@ -487,9 +493,12 @@ ul li a{
 @media (max-width: 467px) {
     /* Aquí puedes escribir los estilos que se aplicarán en pantallas más
     pequeñas */
+    .container {
+        height: 100vh;  /*100% de la altura de la ventana de visualización */
+    }
 
     .section-1 {
-        top: 50%; /* Ajusta la posición según sea necesario */
+        top: 40%; /* Ajusta la posición según sea necesario */
     }
     
     .acerca-de .parrafo {
@@ -503,14 +512,10 @@ ul li a{
     }
 
     /*Trabajo*/
-    .trabajos {
-        transform: translate(-60%, -5%);
-    }
-    
-    
     .card{
+        position: ab;
         width: 200px;
-        height: 250px;
+        height: auto;
     }
     
     .card-img{
@@ -532,7 +537,7 @@ ul li a{
         width: 7%;
     }
 
-    /*-------------footer--------------------------*/
+    /*-------------footer--------------------------
 
     footer {
      height: 15%;
@@ -551,6 +556,14 @@ ul li a{
 
     i, h4{
         font-size: 6px;
+    }*/
+
+    footer {
+        height: 17%;
+    }
+
+    ul li a {
+        font-size: 1.2em;
     }
    
 }
