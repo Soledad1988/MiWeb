@@ -13,53 +13,47 @@
 </head>
 <body>
     
-    <main>
-        <section class="container">
 
-            <img src="img/fondos-para-páginas-web-6.jpg" alt="Imagen de Fondo">
+        <div class="wrapper">
 
             <header>
-                <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
-                <nav id="nav" class="nav">
-                    <button id="cerrar" class="cerrar-menu"><i class="fa fa-times"></i></button>
-                    <ul class="nav-list">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="CV - TorresBrenda - Dev.pdf" download="Brenda Torres - CV">CV<i class="fa fa-file-pdf-o"></i></a></li>
+                <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
 
-            <section class="section-1" >
-
-                <div class="acerca-imagen">
-                    <img src="img/foto2.jpg" alt="imagen-personal">
-                </div>
-
-                <div class="acerca-de">
-                    <p class="parrafo">Soy Brenda, Contadora pública y deasolladora Backend Java, comence en el mundo
+            <main id="acercaDe" class="main">
+                <div class="info-content">
+                    <h1>Soy <span>Brenda</span> Torres</h1>
+                    <p>Contadora pública y deasolladora Backend Java, comence en el mundo
                         de la programación como un juego que fue creciendo de a poco, al punto de querer
                         dedicarme de lleno a este mundo atrapante, me gusta mucho la lógica y las matemáticas.
                         Les comparto algunos proyectos  que he desarrollado en ambientes educativos, y otros
-                        que los he desarrollado por mi cuenta.....Espero disfruten el recorrido!!!
-                    </p>
+                        que los he desarrollado por mi cuenta.<span><b> Espero disfruten el recorrido!!!</b></span></p>
+                    <a download href="/CV - TorresBrenda - Dev.pdf">
+                        <button class="download-cv" download>Download CV</button>
+                    </a>
                 </div>
 
-            </section>
+                <img src="img/foto2.jpg" alt="imagen-personal">
+            </main>
 
-        
-        </section>
+        </div>
 
-        <section class="portfolio" >
+        <section  id="proyectos" class="portfolio" >
 
             <div class="portfolio-headings">
-                <h2>My portfolio</h2>     
+                <h2 class="title">Proyectos</h2>     
                 <div class="divider"></div>
             </div>
             
             <div class="container">
-            
+                
                 <div class="card">
                     <div class="header-car">
                         <h3 class="subtitulo">Hotel Alura</h3>
@@ -70,11 +64,9 @@
                         <div class="image-container">
                             <img src="img/HotelAlura.webp" class="imag" alt="">
                             <div class="hover">
-                                <div class="cont-info">
-                                    <span class="materia-icons"> <li><img src="img/icons8-java-48.png" alt="LogoJava"></li></span>
-                                    <span class="materia-icons"><i class="fa fa-html5"></i></span>
-                                    <!-- Agrega más iconos según sea necesario -->
-                                </div>
+                                <span class="materia-icons"><i class="fab fa-java"></i></span>
+                                <span class="materia-icons"><i class="fa fa-database"></i></span>
+                                <span class="materia-icons"><i class="fab fa-angular"></i></span>
                             </div>
                         </div>
                     </div>
@@ -86,49 +78,128 @@
                         <a href="https://github.com/Soledad1988/challenge-Java-Alura" class="icono" target="_blank"><i class="fa fa-github"></i></a>
                     </div>
                     
-
-                    <div class="card-img">
-                        <img src="img/ConversorDivisas.webp" class="imag" alt="">
+                    <div class="card-hover">
+                        <div class="image-container">
+                            <img src="img/ConversorDivisas.webp"  class="imag" alt="">
+                            <div class="hover">
+                                <span class="materia-icons"><i class="fab fa-java"></i></span>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="card-cuerpo">
-                        
-                        <p class="parrafo-trabajo">Crear un conversor de divisas utilizando el lenguaje Java. 
-                            El convertidor de moneda debe:
-                            Convertir de la moneda de tu país a Dólar
-                            Recordando que también debe ser posible convertir inversamente, es decir:
-                            Convertir de Dólar a la moneda de tu país.
-                        </p>
-                    </div>
-
-                    
 
                 </div>
 
                 <div class="card">
                     
                     <div class="header-car">
-                        <h3 class="subtitulo">CRUD Gym</h3>
+                        <h3 class="subtitulo">Wallet</h3>
                         <a href="https://github.com/Soledad1988/AppGym-JDBC-MySQL-Java" class="icono" target="_blank"><i class="fa fa-github"></i></a>
                     </div>
 
-                    <div class="card-img">
-                        <img src="img/CrudGym.png" class="imag" alt="">
+                    <div class="card-hover">
+                        <div class="image-container">
+                            <img src="img/wallet.png"  class="imag" alt="">
+                            <div class="hover">
+                                <span class="materia-icons"><i class="fab fa-angular"></i></span>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="card-cuerpo">
-                        <p class="parrafo-trabajo">CRUD basico en JDBC y Java Swing en la que se gestionan
-                            altas, bajas y moificaciones de clientes.
-                        </p>
+                </div>
+
+                <div class="card">
+                    
+                    <div class="header-car">
+                        <h3 class="subtitulo">Gestión Alta de Clientes</h3>
+                        <a href="https://github.com/Soledad1988/AppGym-JDBC-MySQL-Java" class="icono" target="_blank"><i class="fa fa-github"></i></a>
                     </div>
 
-                
+                    <div class="card-hover">
+                        <div class="image-container">
+                            <img src="img/CrudGym.png"  class="imag" alt="">
+                            <div class="hover">
+                                <span class="materia-icons"><i class="fab fa-java"></i></span>
+                                <span class="materia-icons"><i class="fa fa-database"></i></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="header-car">
+                        <h3 class="subtitulo">Gestor de Turnos</h3>
+                        <a href="https://github.com/Soledad1988/challenge-Java-Alura" class="icono" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                    
+                    <div class="card-hover">
+                        <div class="image-container">
+                            <img src="img/ConversorDivisas.webp"  class="imag" alt="">
+                            <div class="hover">
+                                <span class="materia-icons"><i class="fab fa-java"></i></span>
+                                <span class="materia-icons"><i class="fa fa-database"></i></span>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
 
             </div>
 
         </section>
+
+        <section  id="skills" class="section-4">
+
+            <div class="skills-headings">
+                <h2 class="title">Habilidades</h2>     
+                <div class="divider"></div>
+            </div>
+            
+            <div class="container">
+                <ul class="skills">
+                    <li><img src="img/icons8-java-48.png" alt="LogoJava"></li>
+                    <li><img src="img/icons8-spring-boot-48.png" alt="LogoSpring"></li>
+                    <li><img src="img/icons8-mysql-48.png" alt="LogoMysql"></li>
+                    <li><img src="img/icons8-angular-48.png" alt="LogoAngular"></li>
+                    <li><img src="img/icons8-html-48.png" alt="LogoHtml"></li>
+                    <li><img src="img/icons8-css-48.png" alt="LogoCss"></li>
+                    <li><img src="img/icons8-git-48.png" alt="LogoGit"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto" class="contenedor-formulario" >
+            <h1>Contacto</h1>
+            <p><em>¡Espero tu consulta y/o comentario!</em></p>
+            <form action="" method="get" class="formulario" id="form">
+              <div class="form-row">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" class="form-control"/>
+                </div>
+      
+                <div class="form-row">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="abcde@gmail.com"
+                    required
+                  />
+                </div>
+      
+                <div class="form-row">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+      
+                <div class="form-row">
+                  <button type="submit">Enviar</button>
+                </div>
+                <p class="alertas" id="alertas"></p>
+            </form>
+    
+          </section>
 
         <footer>
 
@@ -144,7 +215,7 @@
             </div>
 
         </footer>
-    </main>
+    
 
     <script src="app.js"></script>
 </body>
