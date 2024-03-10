@@ -4,11 +4,12 @@ const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
-})
+});
 
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
-})
+});
+
 
 const form = document.getElementById("form");
 const nombre = document.getElementById("nombre");
@@ -64,5 +65,8 @@ form.addEventListener("submit", handleSubmit, (e) => {
     e.preventDefault(); // Evita que el formulario se envíe automáticamente
   }
 });
+
+
+
 
 //form.addEventListener('submit', handleSubmit)
