@@ -51,6 +51,11 @@ body{
     border-radius: 5px;
 }
 
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
 .main{
     margin: 0 auto;
     width: 60vw;
@@ -200,7 +205,7 @@ span{
     margin: 0 10px;
     position: relative;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-    z-index: 1; /* Asegúrate de que los íconos estén en un nivel superior que el fondo */
+    z-index: 1; /* íconos estén en un nivel superior que el fondo */
 }
 
 
@@ -397,14 +402,73 @@ ul li a{
 }
 
 
-
 /* Media Query para pantallas de hasta 768px */
 @media screen and (max-width: 768px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+    }
+
+    .abrir-menu {
+        background-color:#191c32;
+        color:#7578D1;
+        border-radius: 4px;
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        margin: 20px;
+    }
+
+    .navbar {
+        display: none;
+        gap: 1rem;
+        position: absolute;
+        top: 60px;
+        right: 0; /* Alinea el menú a la derecha */
+        background-color: rgba(57, 57, 57, 0.916);
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        width: 100%; /* Establecer un ancho máximo */
+        height: 100%; /* Ajusta la altura automáticamente */
+        justify-content: flex-end; /* Alinea los elementos a la derecha */
+        align-items: center;
+        text-align: right; /* Alinea el texto a la derecha */
+    }
+
+    .cerrar-menu{
+        background-color:#191c32;
+        color:#fff;
+        border-radius: 4px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .navbar.visible {
+        display: block;
+    }
+
+    .menu {
+        display: flex; /* Agregar display: flex */
+        flex-direction: column; /* Establecer dirección de columna */
+        gap: 1rem;
+    }
+
+    .menu li a {
+        color: white;
+        border-radius: 5px; /* Agregar borde redondeado */
+    }
+   
     .main {
         width: 90%; /* Reducir el ancho del contenedor principal */
         height: auto; /* Hacer que la altura sea automática para adaptarse al contenido */
+        border: 10px;
         grid-template-columns: 1fr; /* Cambiar la disposición de las columnas a una sola columna */
         text-align: center; /* Centrar el contenido dentro del contenedor */
+    }
+
+    .main .info-content{
+        padding: 15px;
     }
 
     .main img {
