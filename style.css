@@ -124,7 +124,6 @@ span{
     
 }
 
-
 .carddash {
     width: calc(33.33% - 10px);
     margin-bottom: 10px; 
@@ -136,11 +135,28 @@ span{
     flex-direction: column;
 }
 
+.header-dashcard{
+    border: 10px;
+    padding: 5px;
+}
+
+
 .dascontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around; 
     
+}
+
+.img-container{
+    position: relative;
+}
+
+.imagD {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+    border-radius: 10px; 
 }
 
 /* Estilo inicial de la sección "proyectos" */
@@ -526,6 +542,15 @@ ul li a{
         font-size: 1.8em; /* Reducir el tamaño del encabezado */
     }
 
+    .dashboard .dascontainer {
+        width: 100%; 
+        height: auto;
+        padding: 1em; 
+    }
+
+    .carddash {
+        width: calc(60% - 10px); 
+    }
     .portfolio .container {
         width: 100%; /* Hace que el contenedor ocupe todo el ancho disponible */
         height: auto;
