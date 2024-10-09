@@ -56,55 +56,52 @@ body{
     display: none;
 }
 
-.main{
+.main {
     margin: 0 auto;
     width: 60vw;
-    height: 30vw;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    background-color: #191c32; /* Fondo suave */
+    padding: 20px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-h1{
-    font-size: 2em;
+h1 {
+    font-size: 2.5em;
+    color: #7f7f7f;
+    margin-bottom: 10px;
 }
 
-span{
+span {
     color: #7578D1;
+    font-weight: bold;
 }
 
 .info-content p {
     text-align: justify;
     padding: 20px;
+    line-height: 1.6; /* Mejora la legibilidad */
+    color: #7f7f7f;;
 }
 
-.download-cv{
-    padding: 10px 20px;
-    background-color: #7578D1;
-    border: none;
-    border-radius: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(102,231,200,.69);
-}
-
-.download-cv:hover{
-    background-color: #32C4CB;
-    box-shadow: none;
-}
-
-.main img{
+.main img {
     width: 250px;
-    border: 7px solid  #7578D1;
+    border: 5px solid #7578D1;
     height: 320px;
-    border-radius: 100px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para la imagen */
 }
 
-.about{
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+.about {
+    display: flex;
     width: 100vw;
+    justify-content: center;
+    padding: 30px 0;
 }
+
 
 /* Estilo inicial de la sección "dashbords" */
 
