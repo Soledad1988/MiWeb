@@ -56,8 +56,65 @@
             </div>
 
             <div class="dascontainer">
+
+                   <!-- Tarjeta 1: Dashboard ONG -->
+                   <div class="carddash">
+                    <div class="header-dashcard">
+                        <h3 class="subtitulo">Dashboard ONG con Looker Studio</h3>
+                    </div>
+                    
+                    <div>
+                        <div class="img-container">
+                            <img src="img/Looker3.png" class="imagD" alt="Looker">
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <button id="btnModal1" class="btn-detalles">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- Tarjeta 1: Dashboard Pizzas -->
+                 <div class="carddash">
+                    <div class="header-dashcard">
+                        <h3 class="subtitulo">Dashboard ONG con Google Sheet</h3>
+                    </div>
+                    
+                    <div>
+                        <div class="img-container">
+                            <img src="img/sheet.png" class="imagD" alt="Sheet">
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <button id="btnModal1" class="btn-detalles">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- Tarjeta 1: Dashboard Pizzas -->
+                 <div class="carddash">
+                    <div class="header-dashcard">
+                        <h3 class="subtitulo">Dashboard Pizzas</h3>
+                    </div>
+                    
+                    <div>
+                        <div class="img-container">
+                            <img src="img/pizza.png" class="imagD" alt="Pizzas">
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <button id="btnModal1" class="btn-detalles">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
                 
-                 <!-- Tarjeta 1: Dashboard Ventas -->
+                 <!-- Tarjeta 2: Dashboard Clientes -->
                 <div class="carddash">
                     <div class="header-dashcard">
                         <h3 class="subtitulo">Dashboard Clientes</h3>
@@ -70,24 +127,13 @@
                     </div>
 
                     <div class="btn-container">
-                        <button id="btnModal1" class="btn-detalles">
+                        <button id="btnModal2" class="btn-detalles">
                             Ver Detalles
                         </button>
                     </div>
                 </div>
 
-                <div class="carddash">
-                    <div class="header-dashcard">
-                        <h3 class="subtitulo">Dashboard colaboradores</h3>
-                    </div>
-                    
-                    <div>
-                        <div class="img-container">
-                            <img src="img/Colaboradores.png" class="imagD" alt="ReporteEmpleados">
-                        </div>
-                    </div>
-                </div>
-
+                 <!-- Tarjeta 3: Dashboard Call Center -->
                 <div class="carddash">
                     <div class="header-dashcard">
                         <h3 class="subtitulo">Dashboard Call Center</h3>
@@ -98,7 +144,14 @@
                             <img src="img/CallCenter.png" class="imagD" alt="CallCenter">
                         </div>
                     </div>
+
+                    <div class="btn-container">
+                        <button id="btnModal3" class="btn-detalles">
+                            Ver Detalles
+                        </button>
+                    </div>
                 </div>
+
 
                  <!-- Tarjeta 4: Dashboard Ventas -->
                <div class="carddash">
@@ -120,8 +173,8 @@
             </div>
         </section>
 
-          <!-- Modal 1 -->
-          <div id="myModal1" class="modal">
+         <!-- Modal 1 -->
+         <div id="myModal1" class="modal">
             <div class="modal-content">
                 <span class="close" data-modal="myModal1">&times;</span>
                 <h3>Detalles del Dashboard Clientes</h3>
@@ -129,6 +182,38 @@
                     Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
                 </p>
                 <ul>
+                    <li class="det"><strong>Modelado:</strong> Modelo Copo de nieve.</li>
+                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
+                    <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
+                    <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
+                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
+                </ul>
+
+                <!-- Carrusel 2 -->
+                <div id="carousel1" class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/pizzaCopo.png" class="slide" alt="pizza1">
+                        <img src="img/pizza.png" class="slide" alt="pizza2">
+                        <img src="img/pizza2.png" class="slide" alt="pizza3">
+                        <img src="img/pizza3.png" class="slide" alt="pizza4">
+                    </div>
+                    <!-- Controles del carrusel 2 -->
+                    <button class="prev" onclick="plusSlides(-1, 'carousel1')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel1')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+          <!-- Modal 2 -->
+          <div id="myModal2" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="myModal2">&times;</span>
+                <h3>Detalles del Dashboard Clientes</h3>
+                <p>
+                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                </p>
+                <ul>
+                    <li class="det"><strong>Modelado:</strong> Modelo Estrella.</li>
                     <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
                     <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
                     <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
@@ -140,6 +225,7 @@
                     <div class="carousel-images">
                         <img src="img/Sales1.png" class="slide" alt="Sales1">
                         <img src="img/Sales.png" class="slide" alt="Sales">
+                        <img src="img/Sales4.png" class="slide" alt="Sales2">
                         <img src="img/Sales2.png" class="slide" alt="Sales2">
                         <img src="img/Sales3.png" class="slide" alt="Sales3">
                     </div>
@@ -150,7 +236,36 @@
             </div>
         </div>
 
-            <!-- Modal 4 -->
+        <!-- Modal 3 -->
+        <div id="myModal3" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="myModal3">&times;</span>
+                <h3>Detalles del Dashboard Clientes</h3>
+                <p>
+                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                </p>
+                <ul>
+                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
+                    <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
+                    <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
+                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
+                </ul>
+
+                <!-- Carrusel 3 -->
+                <div id="carousel3" class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/CallCenter.png" class="slide" alt="llamada1">
+                        <img src="img/CallCenter2.png" class="slide" alt="llamada2">
+                        <img src="img/CallCenter3.png" class="slide" alt="llamada3">
+                    </div>
+                    <!-- Controles del carrusel 3 -->
+                    <button class="prev" onclick="plusSlides(-1, 'carousel3')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel3')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
         <div id="myModal4" class="modal">
             <div class="modal-content">
                 <span class="close" data-modal="myModal4">&times;</span>
@@ -166,14 +281,14 @@
                 </ul>
 
                 <!-- Carrusel de Imágenes -->
-                <div id="carousel1" class="carousel">
+                <div id="carousel4" class="carousel">
                     <div class="carousel-images">
                         <img src="img/Ventas.png" class="slide" alt="Ventas1">
                         <img src="img/Ventas2.png" class="slide" alt="Ventas2">
                     </div>
                     <!-- Controles del carrusel 1 -->
-                    <button class="prev" onclick="plusSlides(-1, 'carousel1')">&#10094;</button>
-                    <button class="next" onclick="plusSlides(1, 'carousel1')">&#10095;</button>
+                    <button class="prev" onclick="plusSlides(-1, 'carousel4')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel4')">&#10095;</button>
                 </div>
             </div>
         </div>
@@ -329,10 +444,12 @@
                 <ul class="skills">
                     <li><img src="img/icons8-excel-48.png" alt="LogoExcel"></li>
                     <li><img src="img/icons8-power-bi-48.png" alt="LogoBi"></li>
+                    <li><img src="img/icons8-google-looker-48.png" alt="LogoLooker"></li>
                     <li><img src="img/icons8-java-48.png" alt="LogoJava"></li>
                     <li><img src="img/icons8-spring-boot-48.png" alt="LogoSpring"></li>
                     <li><img src="img/icons8-mysql-48.png" alt="LogoMysql"></li>
                     <li><img src="img/icons8-angular-48.png" alt="LogoAngular"></li>
+                    <li><img src="img/icons8-visual-studio-code-2019-48.png" alt="LogoVisula"></li>
                     <li><img src="img/icons8-html-48.png" alt="LogoHtml"></li>
                     <li><img src="img/icons8-css-48.png" alt="LogoCss"></li>
                     <li><img src="img/icons8-git-48.png" alt="LogoGit"></li>
