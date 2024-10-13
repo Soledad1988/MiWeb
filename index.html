@@ -51,21 +51,28 @@
 
         <section  id="dashboards" class="dashboard">
             <div class="portfolio-headings">
-                <h2 class="title">Dashboards</h2>     
+                <h2 class="title">Dashboards</h2>    
                 <div class="divider"></div>
             </div>
 
             <div class="dascontainer">
                 
+                 <!-- Tarjeta 1: Dashboard Ventas -->
                 <div class="carddash">
                     <div class="header-dashcard">
-                        <h3 class="subtitulo">Dashboard Ventas</h3>
+                        <h3 class="subtitulo">Dashboard Clientes</h3>
                     </div>
                     
                     <div>
                         <div class="img-container">
-                            <img src="img/Ventas.png" class="imagD" alt="ReporteVentas">
+                            <img src="img/Sales.png" class="imagD" alt="Clientes">
                         </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <button id="btnModal1" class="btn-detalles">
+                            Ver Detalles
+                        </button>
                     </div>
                 </div>
 
@@ -93,18 +100,83 @@
                     </div>
                 </div>
 
-                <div class="carddash">
-                    <div class="header-dashcard">
-                        <h3 class="subtitulo">Dashboard Clientes</h3>
-                    </div>
-                    
-                    <div>
-                        <div class="img-container">
-                            <img src="img/Sales.png" class="imagD" alt="Clientes">
-                        </div>
+                 <!-- Tarjeta 4: Dashboard Ventas -->
+               <div class="carddash">
+                <div class="header-dashcard">
+                    <h3 class="subtitulo">Dashboard Ventas</h3>
+                </div>
+                
+                <div>
+                    <div class="img-container">
+                        <img src="img/Ventas.png" class="imagD" alt="ReporteVentas">
                     </div>
                 </div>
+    
+                <div class="btn-container">
+                    <button id="btnModal4" class="btn-detalles">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
         </section>
+
+          <!-- Modal 1 -->
+          <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="myModal1">&times;</span>
+                <h3>Detalles del Dashboard Clientes</h3>
+                <p>
+                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                </p>
+                <ul>
+                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
+                    <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
+                    <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
+                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
+                </ul>
+
+                <!-- Carrusel 2 -->
+                <div id="carousel2" class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/Sales1.png" class="slide" alt="Sales1">
+                        <img src="img/Sales.png" class="slide" alt="Sales">
+                        <img src="img/Sales2.png" class="slide" alt="Sales2">
+                        <img src="img/Sales3.png" class="slide" alt="Sales3">
+                    </div>
+                    <!-- Controles del carrusel 2 -->
+                    <button class="prev" onclick="plusSlides(-1, 'carousel2')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel2')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+            <!-- Modal 4 -->
+        <div id="myModal4" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="myModal4">&times;</span>
+                <h3>Detalles del Dashboard Ventas</h3>
+                <p>
+                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                </p>
+                <ul>
+                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
+                    <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
+                    <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
+                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
+                </ul>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="carousel1" class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/Ventas.png" class="slide" alt="Ventas1">
+                        <img src="img/Ventas2.png" class="slide" alt="Ventas2">
+                    </div>
+                    <!-- Controles del carrusel 1 -->
+                    <button class="prev" onclick="plusSlides(-1, 'carousel1')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel1')">&#10095;</button>
+                </div>
+            </div>
+        </div>
 
         <section  id="proyectos" class="portfolio" >
 
