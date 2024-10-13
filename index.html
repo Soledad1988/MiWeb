@@ -35,7 +35,7 @@
                     <h1>Data Analyst</h1>
                     <h2>Hola soy <span>Brenda</span></h2>
                     <p>Contadora pública con una pasión por el análisis de datos. 
-                        Cuento con más de un año de experiencia en el sector financiero y cinco años en Recursos Humanos. 
+                        Cuento con más de un año de experiencia en el sector comercial, financiero y cinco años en Recursos Humanos. 
                         He desarrollado habilidades en el análisis del entorno empresarial y el diseño de sistemas de reporting 
                         que mejoran la <span>visualización de datos utilizando herramientas como Power BI, Looker Studio, Google Sheets y SQL.</span>
 
@@ -57,7 +57,7 @@
 
             <div class="dascontainer">
 
-                   <!-- Tarjeta 1: Dashboard ONG -->
+                <!-- Tarjeta 1: Dashboard ONG Looker-->
                    <div class="carddash">
                     <div class="header-dashcard">
                         <h3 class="subtitulo">Dashboard ONG con Looker Studio</h3>
@@ -76,7 +76,7 @@
                     </div>
                 </div>
 
-                 <!-- Tarjeta 1: Dashboard Pizzas -->
+                 <!-- Tarjeta 2: Dashboard ONG sheet -->
                  <div class="carddash">
                     <div class="header-dashcard">
                         <h3 class="subtitulo">Dashboard ONG con Google Sheet</h3>
@@ -89,13 +89,13 @@
                     </div>
 
                     <div class="btn-container">
-                        <button id="btnModal1" class="btn-detalles">
+                        <button id="btnModal2" class="btn-detalles">
                             Ver Detalles
                         </button>
                     </div>
                 </div>
 
-                 <!-- Tarjeta 1: Dashboard Pizzas -->
+                 <!-- Tarjeta 3: Dashboard Pizzas -->
                  <div class="carddash">
                     <div class="header-dashcard">
                         <h3 class="subtitulo">Dashboard Pizzas</h3>
@@ -108,13 +108,13 @@
                     </div>
 
                     <div class="btn-container">
-                        <button id="btnModal1" class="btn-detalles">
+                        <button id="btnModal3" class="btn-detalles">
                             Ver Detalles
                         </button>
                     </div>
                 </div>
                 
-                 <!-- Tarjeta 2: Dashboard Clientes -->
+                 <!-- Tarjeta 4: Dashboard Clientes -->
                 <div class="carddash">
                     <div class="header-dashcard">
                         <h3 class="subtitulo">Dashboard Clientes</h3>
@@ -127,13 +127,13 @@
                     </div>
 
                     <div class="btn-container">
-                        <button id="btnModal2" class="btn-detalles">
+                        <button id="btnModal4" class="btn-detalles">
                             Ver Detalles
                         </button>
                     </div>
                 </div>
 
-                 <!-- Tarjeta 3: Dashboard Call Center -->
+                 <!-- Tarjeta 5: Dashboard Call Center -->
                 <div class="carddash">
                     <div class="header-dashcard">
                         <h3 class="subtitulo">Dashboard Call Center</h3>
@@ -146,14 +146,13 @@
                     </div>
 
                     <div class="btn-container">
-                        <button id="btnModal3" class="btn-detalles">
+                        <button id="btnModal5" class="btn-detalles">
                             Ver Detalles
                         </button>
                     </div>
                 </div>
 
-
-                 <!-- Tarjeta 4: Dashboard Ventas -->
+                 <!-- Tarjeta 6: Dashboard Ventas -->
                <div class="carddash">
                 <div class="header-dashcard">
                     <h3 class="subtitulo">Dashboard Ventas</h3>
@@ -166,7 +165,7 @@
                 </div>
     
                 <div class="btn-container">
-                    <button id="btnModal4" class="btn-detalles">
+                    <button id="btnModal6" class="btn-detalles">
                         Ver Detalles
                     </button>
                 </div>
@@ -177,25 +176,24 @@
          <div id="myModal1" class="modal">
             <div class="modal-content">
                 <span class="close" data-modal="myModal1">&times;</span>
-                <h3>Detalles del Dashboard Clientes</h3>
+                <h3>Detalles del Dashboard ONG</h3>
                 <p>
-                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                    Segundo sprint del curso Fundamentos de Data Analytics de <strong>Guayerd </strong>
+                    en colaboración con <strong>IBM</strong>. En este caso el protagonista ha sido Looker Studio,
+                    facilita la creación de paneles interactivos e informes atractivos a partir de una amplia variedad de fuentes de datos, 
+                    lo que permite tomar decisiones empresariales más informadas.
                 </p>
                 <ul>
-                    <li class="det"><strong>Modelado:</strong> Modelo Copo de nieve.</li>
-                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
+                    <li class="det"><strong>ETL:</strong> limpieza de datos y creación de tablas, utilizando Google Sheets.</li>
+                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, o años.</li>
                     <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
-                    <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
-                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
-                </ul>
 
-                <!-- Carrusel 2 -->
+                <!-- Carrusel 1 -->
                 <div id="carousel1" class="carousel">
-                    <div class="carousel-images">
-                        <img src="img/pizzaCopo.png" class="slide" alt="pizza1">
-                        <img src="img/pizza.png" class="slide" alt="pizza2">
-                        <img src="img/pizza2.png" class="slide" alt="pizza3">
-                        <img src="img/pizza3.png" class="slide" alt="pizza4">
+                    <div class="carousel-images" id= "looker">
+                        <img src="img/Looker3.png" class="slide" alt="panelPrincipal">
+                        <img src="img/Looker.png" class="slide" alt="donantes">
+                        <img src="img/Looker2.png" class="slide" alt="proveedores">
                     </div>
                     <!-- Controles del carrusel 2 -->
                     <button class="prev" onclick="plusSlides(-1, 'carousel1')">&#10094;</button>
@@ -208,26 +206,23 @@
           <div id="myModal2" class="modal">
             <div class="modal-content">
                 <span class="close" data-modal="myModal2">&times;</span>
-                <h3>Detalles del Dashboard Clientes</h3>
+                <h3>Detalles del Dashboard ONG</h3>
                 <p>
-                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                    Creado en Google Sheets, este dashboard muestra las principales funcionalidades para el análisis de datos, incluyendo:
                 </p>
                 <ul>
-                    <li class="det"><strong>Modelado:</strong> Modelo Estrella.</li>
-                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
-                    <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
-                    <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
-                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
+                    <li class="det"><strong>Tablas dinámicas:</strong> Análisis flexible y dinámico de los datos con opciones de filtrado y resumen.</li>
+                    <li class="det"><strong>Función QUERY:</strong> Unificación de múltiples tablas para realizar análisis más completos.</li>
+                    <li class="det"><strong>Gráficos:</strong> Visualización de tendencias y comparaciones a través de diferentes tipos de gráficos.</li>
                 </ul>
+                
 
                 <!-- Carrusel 2 -->
                 <div id="carousel2" class="carousel">
                     <div class="carousel-images">
-                        <img src="img/Sales1.png" class="slide" alt="Sales1">
-                        <img src="img/Sales.png" class="slide" alt="Sales">
-                        <img src="img/Sales4.png" class="slide" alt="Sales2">
-                        <img src="img/Sales2.png" class="slide" alt="Sales2">
-                        <img src="img/Sales3.png" class="slide" alt="Sales3">
+                        <img src="img/sheet.png" class="slide" alt="Sales1">
+                        <img src="img/sheet2.png" class="slide" alt="Sales">
+                        <img src="img/sheetExcel.png" class="slide" alt="Sales3">
                     </div>
                     <!-- Controles del carrusel 2 -->
                     <button class="prev" onclick="plusSlides(-1, 'carousel2')">&#10094;</button>
@@ -240,11 +235,12 @@
         <div id="myModal3" class="modal">
             <div class="modal-content">
                 <span class="close" data-modal="myModal3">&times;</span>
-                <h3>Detalles del Dashboard Clientes</h3>
+                <h3>Detalles del Dashboard Venta Pizzas</h3>
                 <p>
-                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                    El presente informe proporciona información detallada sobre las ventas de pizzas, utilizando un modelo de datos un poco más complejo y desafiante, conocido como modelo de copo de nieve.
                 </p>
                 <ul>
+                    <li class="det"><strong>Modelado:</strong> Modelo copo de nieve.</li>
                     <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
                     <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
                     <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
@@ -254,6 +250,7 @@
                 <!-- Carrusel 3 -->
                 <div id="carousel3" class="carousel">
                     <div class="carousel-images">
+                        <img src="img/pizzaCopo.png" class="slide" alt="llamada3">
                         <img src="img/CallCenter.png" class="slide" alt="llamada1">
                         <img src="img/CallCenter2.png" class="slide" alt="llamada2">
                         <img src="img/CallCenter3.png" class="slide" alt="llamada3">
@@ -269,7 +266,39 @@
         <div id="myModal4" class="modal">
             <div class="modal-content">
                 <span class="close" data-modal="myModal4">&times;</span>
-                <h3>Detalles del Dashboard Ventas</h3>
+                <h3>Detalles del Dashboard Clientes</h3>
+                <p>
+                    En este trabajo se ha aplicado el modelo estrella, la tabla calendario y el análisis temporal, además de profundizar con las medidas DAX, incluyendo:
+                </p>
+                <ul>
+                    <li class="det"><strong>Modelado:</strong> Modelo Estrella.</li>
+                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
+                    <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
+                    <li class="det"><strong>Power Query:</strong> Limpieza y transformación de datos para optimizar el análisis.</li>
+                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
+                </ul>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="carousel4" class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/Sales4.png" class="slide" alt="Ventas1">
+                        <img src="img/Sales.png" class="slide" alt="Ventas2">
+                        <img src="img/Sales1.png" class="slide" alt="Ventas2">
+                        <img src="img/Sales2.png" class="slide" alt="Ventas2">
+                        <img src="img/Sales3.png" class="slide" alt="Ventas2">
+                    </div>
+                    <!-- Controles del carrusel 1 -->
+                    <button class="prev" onclick="plusSlides(-1, 'carousel4')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel4')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Modal 5 -->
+         <div id="myModal5" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="myModal5">&times;</span>
+                <h3>Detalles del Dashboard Call Center</h3>
                 <p>
                     Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
                 </p>
@@ -281,14 +310,42 @@
                 </ul>
 
                 <!-- Carrusel de Imágenes -->
-                <div id="carousel4" class="carousel">
+                <div id="carousel5" class="carousel">
+                    <div class="carousel-images">
+                        <img src="img/CallCenter.png" class="slide" alt="Ventas1">
+                        <img src="img/CallCenter2.png" class="slide" alt="Ventas1">
+                        <img src="img/CallCenter3.png" class="slide" alt="Ventas1">                  
+                    </div>
+                    <!-- Controles del carrusel 5 -->
+                    <button class="prev" onclick="plusSlides(-1, 'carousel5')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel5')">&#10095;</button>
+                </div>
+            </div>
+        </div>
+
+         <!-- Modal 6 -->
+         <div id="myModal6" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="myModal6">&times;</span>
+                <h3>Detalles del Dashboard Ventas</h3>
+                <p>
+                    Creado en un workshop con <strong>LevelUp</strong>, este dashboard destaca las principales funcionalidades de Power BI, incluyendo:
+                </p>
+                <ul>
+                    <li class="det"><strong>Segmentación:</strong> Implementación de filtros interactivos para análisis por categoría, fecha, o productos específicos.</li>
+                    <li class="det"><strong>Navegación entre páginas:</strong> Facilita el flujo entre diferentes reportes dentro del dashboard.</li>
+                    <li class="det"><strong>DAX:</strong> Uso de medidas como DISTINCTCOUNT, SUM, SUMX, MAX, AVERAGE, COUNTROWS.</li>
+                </ul>
+
+                <!-- Carrusel de Imágenes -->
+                <div id="carousel6" class="carousel">
                     <div class="carousel-images">
                         <img src="img/Ventas.png" class="slide" alt="Ventas1">
                         <img src="img/Ventas2.png" class="slide" alt="Ventas2">
                     </div>
-                    <!-- Controles del carrusel 1 -->
-                    <button class="prev" onclick="plusSlides(-1, 'carousel4')">&#10094;</button>
-                    <button class="next" onclick="plusSlides(1, 'carousel4')">&#10095;</button>
+                    <!-- Controles del carrusel 6 -->
+                    <button class="prev" onclick="plusSlides(-1, 'carousel6')">&#10094;</button>
+                    <button class="next" onclick="plusSlides(1, 'carousel6')">&#10095;</button>
                 </div>
             </div>
         </div>

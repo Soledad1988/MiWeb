@@ -28,6 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
     openModal("myModal4");
   }
 
+  document.getElementById("btnModal5").onclick = function() {
+    openModal("myModal5");
+  }
+
+  document.getElementById("btnModal6").onclick = function() {
+    openModal("myModal6");
+  }
+
   // Asignar eventos a los botones de cierre
   var closeButtons = document.getElementsByClassName("close");
   for (var i = 0; i < closeButtons.length; i++) {
@@ -47,7 +55,9 @@ let slideIndex = {
   carousel1: 0,
   carousel2: 0,
   carousel3: 0,
-  carousel3: 0
+  carousel4: 0,
+  carousel5: 0,
+  carousel6: 0
 };
 
 // Mostrar las imágenes iniciales
@@ -55,6 +65,8 @@ showSlides(slideIndex.carousel1, 'carousel1');
 showSlides(slideIndex.carousel2, 'carousel2');
 showSlides(slideIndex.carousel3, 'carousel3');
 showSlides(slideIndex.carousel4, 'carousel4');
+showSlides(slideIndex.carousel5, 'carousel5');
+showSlides(slideIndex.carousel6, 'carousel6');
 
 // Función para cambiar las diapositivas
 function plusSlides(n, carouselId) {
