@@ -10,7 +10,8 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-.wrapper{
+/* General */
+.wrapper {
     background-color: #191c32;
     width: 100%;
     height: 100vh;
@@ -18,37 +19,57 @@ body{
     color: #fff;
 }
 
-.navbar{
+/* Navbar */
+.navbar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding: 1.5em;
+    background-color: rgba(25, 28, 50, 0.9); /* Fondo semitransparente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.menu{
+.menu {
     display: flex;
-    width: 50%;
+    width: auto; /* Ajusta al contenido */
     justify-content: space-around;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
 }
 
-.menu li{
+.menu li {
     list-style: none;
 }
 
-.menu a{
+.menu a {
     color: #fff;
     text-decoration: none;
     font-size: 1em;
     padding: 10px 20px;
-}
-
-.menu .active{
-    color:  #fff;
-}
-
-.menu a:hover{
-    background-color: #7578D1;
-    transition: ease-in .5s;
+    border: 2px solid transparent;
     border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    background-color: #7578D1;
+    color: #191c32;
+    border: 2px solid #7578D1;
+    border-radius: 10px;
+}
+
+.menu .highlight {
+    background-color: #7578D1; /* Resalta blog y YouTube */
+    color: #d1cfcf;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.menu .highlight:hover {
+    background-color: #fff;
+    color: #191c32;
 }
 
 .abrir-menu,
